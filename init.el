@@ -13,3 +13,6 @@
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 (global-set-key (kbd "M-g") #'goto-line)
+(global-linum-mode t)
+(add-hook 'comint-output-filter-functions
+'comint-watch-for-password-prompt)
